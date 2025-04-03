@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+        body {
+            font-family: "Playwrite NL Guides", serif;
+            
+        }
+        .container {
+            width: 900px;
+            border: 3px solid rgb(162, 34, 162);
+            margin: 33px auto;
+            background-color:bisque;
+        }
+        .item {
+            border: 5px solid green;
+            margin: 12px 8px;
+            padding: 12px 5px;
+            background-color: rgb(219, 239, 247);
+        }
+
+        /* float is used to arrange the boxes at certain position */
+        #fruits {
+            float: right;
+            width: 48%;
+        }
+        
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        /* to avoid collision between to boxes we use clear
+        we have clear: left-->left side will clear
+        clear: right--> right side will be collision free */
+        #stationery {
+            clear: both;
+            
+        }
+        /* lastly given property is executed 
+        last property will override the remaining properties */
+        p,h3 {
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+
+        }
+        h1 {
+            margin: auto;
+            width: 310px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <h1> Welcome to the Store</h1>
+        <div id="fruits" class="item">
+            <h3> Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident ab, rerum beatae explicabo dolore tempore iusto voluptatem enim quod laborum, autem fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium minus perspiciatis deleniti ex facilis obcaecati aliquid non, temporibus quasi fugit quae a eaque. Repellendus quaerat quasi ipsum dolore repellat voluptates reprehenderit sequi facilis.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3> Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident ab, rerum beatae explicabo dolore tempore iusto voluptatem enim quod laborum, autem fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt excepturi voluptatibus eaque vero aspernatur natus aut, aliquam asperiores in sapiente ipsum, pariatur est, nulla molestiae? Error, facere? Debitis, nam exercitationem. Atque error molestiae numquam?</p>
+        </div>
+  
+        <div id="stationery" class="item">
+            <h3> Stationery</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident ab, rerum beatae explicabo dolore tempore iusto voluptatem enim quod laborum, autem fuga.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3> Glasses</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident ab, rerum beatae explicabo dolore tempore iusto voluptatem enim quod laborum, autem fuga.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* css is used to style the web page */
+/* In this we have selector {property:value} which is used for referencing */
+/* In css we have 3 types:
+   1. inline Css: used to style attribute directly i.e <p style="value">
+   2.Internal Css: used in head tags <style> tags
+   3. External css: used in separately i.e in  css files*/
+   /* There are 2 steps
+     1.write in css file ans save it as .css 
+      2.include the css file to markup */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Properties</title>
+</head>
+<style>
+    h1 {
+        background-color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* If p is contained in div */
+    /* div p {
+        background-color: green;
+    } */
+
+    /* if div is conttained by li and li is contained in div */
+    div li p {
+        background-color: green;
+    }
+    /* If p is right inside div then this css will work */
+    div > p {
+        background-color: green;
+    }
+    /* if p is right after div i.e p is next sibling of div */
+    div + p {
+        background-color: green;
+    }
+</style>
+<body>
+    <h1>This is Heading</h1>
+    <div class="div">
+        <li><p>This is inner Paragraph</p></li> 
+       <li> <p>This is inner 2nd paragrpah</p></li>
+    </div>
+    <p>This is outer pragraph</p>
+</body>
+</html>

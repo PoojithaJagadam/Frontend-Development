@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+</head>
+<style>
+    /*  '*' Universal selector */
+    * {
+       box-sizing: border-box;
+       margin : 0;
+       padding: 0; 
+    }
+    /* body universal selector */
+    body {
+        background-color: #be71c2;
+    }
+    .container {
+        height: 150px;
+        width:600px;
+        background-color:#caa6ec;;
+        border: 5px solid rgb(90 103 181);
+        border-radius: 10px;
+
+          padding: 20px;  
+        /* We can set margin/padding for top ,bottom,right,left  like */
+        /* padding-top: 14px;  
+        padding-left: 14px; 
+        padding-bottom: 14px; 
+        padding-right: 14px; */
+
+        margin:10px;
+        /*margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;*/
+
+        /* padding: y(top/bottom) x(left/right); */
+        /* margin: y(top/bottom) x(left/right); */
+
+        /* padding:top right bottom left; */
+        /* padding:22px 24px 4px 20px; */
+        /* margin:top right bottom left; */
+        /* margin:22px 24px 4px 20px; */
+        
+        box-sizing:border-box;
+    }
+</style>
+<body>
+    <!-- by entering .container we can get the below div class with name container-->
+<div class="container">
+    <h3> This is my heading</h3>
+      <!-- by entering #pfirst and enter we can get p tags with id name as first -->
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo, nihil, quos, cupiditate amet nulla deleniti ipsam quidem atque maiores cum eum dolor.</p>
+</div>
+
+<div class="container">
+    <h3> This is my heading</h3>
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo, nihil, quos, cupiditate amet nulla deleniti ipsam quidem atque maiores cum eum dolor.</p>
+</div>
+
+<div class="container">
+    <h3> This is my heading</h3>
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo, nihil, quos, cupiditate amet nulla deleniti ipsam quidem atque maiores cum eum dolor.</p>
+</div>
+</body>
+</html>

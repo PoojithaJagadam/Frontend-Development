@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+</head>
+<style>
+    /* Element selctor */
+    p {
+        border: 2px solid red;
+    }
+    /* # is used to represnt for id 
+        Id selector*/
+    #redElement{
+        color:white;
+    }
+    /* . is used for class 
+        class selector*/
+    .bg{
+        background-color: blueviolet;
+    }
+    /* Grouping selector */
+    span , footer {
+        color: green;
+    }
+</style>
+<body>
+    <h3> Css Selctors</h3>
+    <p >This is the first paragraph</p>
+    <p id="redElement" class="bg">This is the second paragraph</p>
+    <div >
+        <p >This is the third paragraph</p>
+        <span> This is span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

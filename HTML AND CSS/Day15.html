@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,and Borders</title>
+</head>
+<style>
+    #firstpara {
+        height: 100px;
+        width: 252px;
+        border-width: 4px;
+        /* text-align: center; */
+        background-color: blueviolet;
+       border-style: solid;
+       border-color: green;
+       border-radius: 30px; /*rounding ofcorners*/
+    }
+    #secondpara {
+        background-color: rgb(171, 226, 43);
+        height: 100px;
+        width: 252px;
+        border-width: 4px;
+        
+        border-top: 5px solid palevioletred;
+        border-left: 5px solid rgb(89, 13, 195);
+        border-right: 5px solid rgb(27, 13, 218);
+        border-bottom: 5px solid rgb(98, 243, 8);
+        
+       border-top-left-radius: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 15px;
+    }
+    #thirdpara {
+        height: 600px;
+        width: 800px;
+        background-color: blue;
+
+       background-image: url('https://th.bing.com/th/id/OIP.mvge5eaHtR4u0toQ-I8xMAAAAA?rs=1&pid=ImgDetMain');
+
+       background-repeat: no-repeat;
+        /* background-repeat: repeat-y; */
+        /* background-repeat: repeat-x; */
+
+        background-position: center center; 
+        /* background-position: center-top; */
+        /* background-position: 12px; */
+        /* background-position: 12px 5px; */
+        /* background-position: left bottom; */
+        /* background-position: top top; */
+    }
+</style>
+<body>
+    <h3>Implementing border heigth and border Properties</h3>
+    <p id="firstpara"> This is first paragraph</p>
+    <p id="secondpara"> This is second paragraph</p>
+    <p id="thirdpara"> This is third paragraph</p>
+</body>
+</html>

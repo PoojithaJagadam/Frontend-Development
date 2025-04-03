@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+<style>
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+    #box-1 {
+        position: relative;
+        top: 20px;
+        background-color: red;
+        border: 2px solid black;
+        z-index: -120;
+    }
+    #box-2 {
+        position: relative;
+        top: 20px;
+        /* by using visibility: hidden the space is left over */
+        /* visibility: hidden; */
+        /* by using display: none the box is entirely deleted without any let over spsce */
+        /* display: none; */
+        background-color: blue;
+        border: 2px solid black;
+        /* z-index is used to increse the box length and
+        z-index is used only for position: relative, sticky, fixed and absolute */
+        z-index: 35;
+    }
+    #box-3 {
+        background-color: green;
+        border: 2px solid black;
+    }
+    #box-4 {
+        background-color: yellow;
+        border: 2px solid black;
+    }
+
+</style>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

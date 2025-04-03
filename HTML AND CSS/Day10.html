@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and Css</title>
+</head>
+<style>
+    /* it is used for styling the attribute paragraph */
+    /* but inline css has more priority than internal css */
+    p{
+        color: red;
+        background-color: aqua;
+    }
+    </style>
+    <!-- when we write link tag here it overrides internL CSS -->
+    <link rel="stylesheet" href="Day10.css">
+<body>
+    <h3>In this we are including css to markup</h3>
+    <!-- the below including of css with markup is called Inline css i.e we are deisging on same line -->
+    <p style="color:blue; background-color: yellow;">We can include css to markup to design the web page It helps a lot and it makes page beautiful</p>
+    <!-- But inline css is not best technique because no. of line sof code is high and it become messy -->
+    <!-- this is internal css which is deigned by using <style> tag -->
+    <p>Hello welcome to Internal Css</p>
+
+</body>
+</html>

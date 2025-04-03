@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribte and nth Child pseudo selector</title>
+</head>
+<style>
+    .container {
+        
+        margin: auto;
+        width: 233px;
+        display: block;
+    }
+
+    /* in from section we can decorate or highlight like below mentuoned */
+    input {
+        display: block;
+    }
+
+    /*  in input swction alsp we can hightlight specific category by using input[selcted tyoe] */
+    input[type='text'] {
+        padding: 23px;
+        border: 2px solid red;
+    }
+    input[type='password'] {
+        padding: 13px;
+        border: 2px solid rgb(227, 159, 23);
+    }
+    /* in anchor tag we can hightlight specific links by using a[target]  */
+    a[target] {
+        font-size: 34px;
+        color: violet;
+    }
+    a[target= '_self'] {
+        font-size: 24px;
+        color: rgb(2, 54, 157);
+    }
+
+    /* nth child*/
+    /* in the below properties n starts from 0 ND INCREMent 
+    for n=0 , 2n+0=0
+    for n=1 2*1+0=2
+    for n=2 2*2+0=4 ....
+    likewise for every even elements the color will be displayed */
+    /* li:nth-child(2n+0) {
+        color: blue;
+    }
+
+    li:nth-child(3n+3) {
+        color:rgb(227, 159, 23);
+    } */
+
+    /* for all odd item sets */
+    li:nth-child(odd) {
+        color: green;
+    }
+
+    /* for all even item sets */
+    li:nth-child(even) {
+        color:blueviolet;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1> <a href="https://google.com" target="_blank">Go to Google</a></h1>
+        <h1> <a href="https://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your Password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">Item-5</li>
+            <li class="item" id="item-6">Item-6</li>
+        </ul>
+    </div>
+</body>
+
+</html>

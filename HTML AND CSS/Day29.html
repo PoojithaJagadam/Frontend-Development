@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow and text-shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    .card {
+        border: 2px solid red;
+        padding:23px 24px;
+        margin: 24px 15px;
+        background-color: bisque;
+        /* for getting shadow for the box we use box-shadow 
+        by assigning +ve values we wil get the shadow in the bottom right of the flex box */
+        /* box-shadow: 12px 14px green; */
+
+        /*  by assigning -ve values we wil get the shadow in the top left of the flex box */
+        /* box-shadow: -12px -14px green;     likewise    */
+
+        /* box-shadow: -12px 14px green;  */
+
+        /* box-shadow: y cordinate x coordinate blur color*/
+        /* box-shadow: 12px 14px 20px green;  */
+         /* box-shadow: y cordinate x coordinate blur spread-color  color*/
+        /* box-shadow: 12px 14px 20px 15px green;  */
+
+         box-shadow: inset 13px 15px green; 
+
+    /* box-shadow: 3px 5px green, 4px 6px red; */
+
+    }
+    h1 {
+        text-shadow: 10px 6px 5px black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error hic similique deserunt, mollitia vero soluta quod fugit est dignissimos inventore a, rerum fugiat unde qui, ex nisi voluptatum corporis veniam. Reprehenderit, consectetur quaerat?</p>           
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error hic similique deserunt, mollitia vero soluta quod fugit est dignissimos inventore a, rerum fugiat unde qui, ex nisi voluptatum corporis veniam. Reprehenderit, consectetur quaerat?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error hic similique deserunt, mollitia vero soluta quod fugit est dignissimos inventore a, rerum fugiat unde qui, ex nisi voluptatum corporis veniam. Reprehenderit, consectetur quaerat?</p>
+        </div>
+    </div>
+</body>
+</html>

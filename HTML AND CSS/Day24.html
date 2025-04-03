@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size items</title>
+</head>
+    <style>
+        html {
+            font-size: 12px;
+        }
+        .container {
+            /* vh is used to set height with respect to container
+            i.e to fit the total length of the container */
+            height: 100vh;
+            /* vw is used to set width with respect to container
+            i.e to fit the total length of the container */
+            width: 100vw;
+            font-size: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #item-1 {
+            /* em is used to represent the text 10 times bigger than parent 
+            i.e container font */
+            font-size: 12em;
+        }
+        #item-3 {
+            /* rem is used to represent the text 10 times bigger than parent 
+            i.e html font */
+            font-size: 12rem;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1 id="item-1">This is the First Heading</h1>
+        <h1 id="item-2">This is the Second Heading</h1>
+        <h1 id="item-3">This is the Third Heading</h1>
+    </div>
+</body>
+
+</html>

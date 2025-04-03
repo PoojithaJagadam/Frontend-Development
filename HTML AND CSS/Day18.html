@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & more designing</title>
+</head>
+<style>
+    .container {
+        border: 2px solid red;
+        background-color: rgb(206, 246, 206);
+        padding: 34px;
+        margin: 34px auto;
+        width: 666px;
+    }
+
+    /* to remove underline under read more we used text decoration */
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    /*  for hovering purpose : while reaching that button the color has to change for that we used hover */
+    a:hover {
+        color: purple;
+        background-color: rgb(214, 102, 102);
+    } 
+    /* if we visited that button the color has to be changed for that we used a: visited */
+   a:visited {
+    background-color: blueviolet;
+   }
+   /* if that button was in active state the backgroundcolor of that will be changed */
+   a:active {
+    background-color:rgb(132, 225, 9);
+   }
+    .btn {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-weight: bold;
+        background-color: rgb(141, 229, 141);
+        border: none;
+        padding: 6px;
+        /* when we reach the button the style of the cursor can be choosed by using cursor property */
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 4px;
+    }
+    .btn:hover {
+        color: blue;
+        background-color: rgb(216, 13, 192);
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h3> This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium enim, sit officia veritatis quis quidem porro illo minima, veniam voluptatem sint aliquid eius placeat iure? Accusamus iure esse 
+        voluptates nihil neque praesentium reprehenderit.</p>
+        <a  href="https://google.com" class="btn">Read more</a>
+        <!-- for creating buttons we use button tag -->
+        <button class="btn"> Contact us</button>
+    </div>
+</body>
+</html>

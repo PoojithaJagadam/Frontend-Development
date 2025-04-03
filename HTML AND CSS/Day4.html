@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- div is block of code whhich divides information into blocks -->
+    <h3> Html Forms</h3>
+    <form action="backend.php">
+        <!-- alt + down arrow to move block of code to downwards same for upwards 
+         alt+ up arrow-->
+         <!-- label is used for highlight when we click on it -->
+         <label for="name"> Name</label>
+        <div>
+            <!-- when we typr input we will see many option like text email date etc we have to select -->
+        <input type="text" name="MyName" id="name"> 
+    </div><br>
+    <div>
+        Id: <input type="text" name="MyId"> 
+    </div><br>
+    <div>
+    Role <input type="text" name="MyRole">
+</div><br>
+        <div>
+       Email <input type="email" name="Myemail">
+    </div><br>
+        <div>
+       Date:<input type="date" name="date" >
+    </div><br>
+        <div>
+       Number: <input type="number" name="Mynumber">
+    </div><br>
+    <div>
+   Are you eligible?<input type="checkbox" name="Myeligibility">
+</div><br>
+    <div>
+   Write about yourself<br><textarea type="text" rows="10" cols="60"> </textarea>
+</div><br>
+    <div>
+  <label for="car">Car</label>
+  <select name="mycar" id="car">
+    <!-- we have options to place using option -->
+        <option value="ind">Indica</option>
+        <option value="swf" selected>Swift</option>
+    </select>
+    <br>
+</div><br>
+    <div>
+        Gender: male <input type="radio" name="Mygender">  female <input type="radio" name="Mygender">
+    </div><br>
+    
+
+    <div>
+       Bonus: <input type="number" name="MyBonus" >
+    </div><br>
+    <div>
+        <input type="Submit" name="SubmitNow">
+        <input type="Reset" name="ResetNow">
+    </div><br>
+    
+    </form>
+</body>
+</html>
