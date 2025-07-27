@@ -43,8 +43,8 @@ This repository serves as a personal collection of exercises and practice projec
 
   Frontend-Development/
   ├── HTML-and-CSS/
-  │ ├── Day10.html
-  │ └── Day10.css
+  │ ├── DayX.html
+  │ └── DayX.css
   │ └── ...
   ├── JS/
   │ ├── Arrays/
